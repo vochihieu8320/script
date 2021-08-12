@@ -1,0 +1,24 @@
+{
+  "name": "ccm-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "pm2 start ecosystem.config.js --env development",
+    "start:prod": "pm2 start ecosystem.config.js --env production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.hiq.ai:hiq/ccm-scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wildcard-api/server": "^0.5.3",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "pm2": "^5.1.0",
+    "selenium-webdriver": "^4.0.0-beta.4"
+  }
+}

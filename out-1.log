@@ -1,0 +1,76 @@
+2021-08-12T23:44:11: connected database
+2021-08-12T23:44:18: window CDwindow-7B915EE55BA835DACDE14B82071597BA
+2021-08-12T23:48:46: connected database
+2021-08-12T23:48:52: window CDwindow-82924A4A55B8EBAE3D8F1434B67C6D91
+2021-08-12T23:52:20: connected database
+2021-08-12T23:52:26: window CDwindow-E6EAB7C921C6FCE1B8169B8F749DDAE0
+2021-08-12T23:52:59: connected database
+2021-08-12T23:53:05: window CDwindow-66A80548F838C9067953A5C65E654A91
+2021-08-13T00:04:27: connected database
+2021-08-13T00:04:35: window CDwindow-0B95BED7EE73D03ACF280CA318269C69
+2021-08-13T00:06:04: connected database
+2021-08-13T00:06:10: window CDwindow-D9BE9F8DCC78C9482ADEF18D72CDD8B1
+2021-08-13T00:06:12: error ElementClickInterceptedError: element click intercepted: Element <button data-v-3252f4f9="" data-v-c4b07d76="" class="buttonPrimary t-align--center gogenta buttonPrimary--medium" aria-label="Submit" gogo-test="log_in">...</button> is not clickable at point (676, 501). Other element would receive the click: <h2 id="CybotCookiebotDialogBodyContentTitle" lang="en">...</h2>
+2021-08-13T00:06:12:   (Session info: chrome=92.0.4515.131)
+2021-08-13T00:06:12:     at Object.throwDecodedError (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\error.js:517:15)
+2021-08-13T00:06:12:     at parseHttpResponse (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:642:13)
+2021-08-13T00:06:12:     at Executor.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:568:28)
+2021-08-13T00:06:12:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-13T00:06:12:     at async Driver.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:731:17)
+2021-08-13T00:06:12:     at async F:\ccm_script\ccm-scripts\service\selinum.service.js:54:7 {
+2021-08-13T00:06:12:   remoteStacktrace: 'Backtrace:\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x01105843+2512963]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x0109EED1+2092753]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FA1F48+1056584]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FD26DB+1255131]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FD09DF+1247711]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FCE7AD+1238957]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FCD65D+1234525]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FC3157+1192279]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FE55F3+1332723]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FC2F76+1191798]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FE56DA+1332954]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FF487F+1394815]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FE54BB+1332411]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FC1D14+1187092]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x00FC2B79+1190777]\n' +
+2021-08-13T00:06:12:     '\tGetHandleVerifier [0x01280C56+1501718]\n' +
+2021-08-13T00:06:12:     '\tGetHandleVerifier [0x0132E97F+2213695]\n' +
+2021-08-13T00:06:12:     '\tGetHandleVerifier [0x01188C92+485970]\n' +
+2021-08-13T00:06:12:     '\tGetHandleVerifier [0x01187D59+482073]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x010A471D+2115357]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x010A8678+2131576]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x010A87B2+2131890]\n' +
+2021-08-13T00:06:12:     '\tOrdinal0 [0x010B1971+2169201]\n' +
+2021-08-13T00:06:12:     '\tBaseThreadInitThunk [0x76D9FA29+25]\n' +
+2021-08-13T00:06:12:     '\tRtlGetAppContainerNamedObjectPath [0x77A47A7E+286]\n' +
+2021-08-13T00:06:12:     '\tRtlGetAppContainerNamedObjectPath [0x77A47A4E+238]\n'
+2021-08-13T00:06:12: }
+2021-08-13T00:16:03: connected database
+2021-08-13T00:16:07: window CDwindow-4520B0A059C69BEFFBA33BC2E2ADCCD6
+2021-08-13T00:22:54: connected database
+2021-08-13T00:22:59: window CDwindow-A4E73AD0E8B4DB578024EBD4B5127D44
+2021-08-13T00:34:40: connected database
+2021-08-13T00:38:09: connected database
+2021-08-13T00:39:40: connected database
+2021-08-13T00:42:44: connected database
+2021-08-13T00:43:13: connected database
+2021-08-13T00:52:06: connected database
+2021-08-13T00:52:15: packet { some: 'data' }
+2021-08-13T00:55:15: connected database
+2021-08-13T00:55:41: packet {
+2021-08-13T00:55:41:   campaign: {
+2021-08-13T00:55:41:     id: 21,
+2021-08-13T00:55:41:     userId: 1257,
+2021-08-13T00:55:41:     idOnPlatform: '18877647',
+2021-08-13T00:55:41:     name: '',
+2021-08-13T00:55:41:     status: 1,
+2021-08-13T00:55:41:     title: 'AnyBackup: Offline AutoBackup & 100W FastCharge',
+2021-08-13T00:55:41:     description: "Completely AUTO backup while 100W Super Fast Charge for iOS & Android. APPLE MFi-certified product. | Check out 'AnyBackup: Offline AutoBackup & 100W FastCharge' on Indiegogo.",
+2021-08-13T00:55:41:     url: 'https://www.indiegogo.com/project/2618220',
+2021-08-13T00:55:41:     totalRaised: 0,
+2021-08-13T00:55:41:     platformId: 2
+2021-08-13T00:55:41:   }
+2021-08-13T00:55:41: }
+2021-08-13T00:55:41: result Promise { <pending> }
+2021-08-13T00:55:47: window CDwindow-B770E08BC5194F80CB27AA6467DB9D1A

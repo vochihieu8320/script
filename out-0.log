@@ -1,0 +1,199 @@
+2021-08-12T20:54:53: connected database
+2021-08-12T20:57:13: error NoSuchWindowError: no such window: target window already closed
+2021-08-12T20:57:13: from unknown error: web view not found
+2021-08-12T20:57:13:   (Session info: chrome=92.0.4515.131)
+2021-08-12T20:57:13:     at Object.throwDecodedError (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\error.js:517:15)
+2021-08-12T20:57:13:     at parseHttpResponse (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:642:13)
+2021-08-12T20:57:13:     at Executor.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:568:28)
+2021-08-12T20:57:13:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-12T20:57:13:     at async Driver.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:731:17)
+2021-08-12T20:57:13:     at async Driver.findElements (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:1057:17) {
+2021-08-12T20:57:14:   remoteStacktrace: 'Backtrace:\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x01015843+2512963]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00FAEED1+2092753]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00EB1F48+1056584]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00E9BB46+965446]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00EF78F9+1341689]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00F04002+1392642]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00EF54BB+1332411]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00ED1D14+1187092]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00ED2B79+1190777]\n' +
+2021-08-12T20:57:14:     '\tGetHandleVerifier [0x01190C56+1501718]\n' +
+2021-08-12T20:57:14:     '\tGetHandleVerifier [0x0123E97F+2213695]\n' +
+2021-08-12T20:57:14:     '\tGetHandleVerifier [0x01098C92+485970]\n' +
+2021-08-12T20:57:14:     '\tGetHandleVerifier [0x01097D59+482073]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00FB471D+2115357]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00FB8678+2131576]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00FB87B2+2131890]\n' +
+2021-08-12T20:57:14:     '\tOrdinal0 [0x00FC1971+2169201]\n' +
+2021-08-12T20:57:14:     '\tBaseThreadInitThunk [0x76FBFA29+25]\n' +
+2021-08-12T20:57:14:     '\tRtlGetAppContainerNamedObjectPath [0x77E77A7E+286]\n' +
+2021-08-12T20:57:14:     '\tRtlGetAppContainerNamedObjectPath [0x77E77A4E+238]\n'
+2021-08-12T20:57:14: }
+2021-08-12T20:59:23: connected database
+2021-08-12T21:02:54: err
+2021-08-12T21:02:54: connected database
+2021-08-12T21:03:00: err
+2021-08-12T21:03:00: connected database
+2021-08-12T21:03:08: err
+2021-08-12T21:03:08: connected database
+2021-08-12T21:03:15: connected database
+2021-08-12T21:03:39: connected database
+2021-08-12T21:05:17: connected database
+2021-08-12T21:07:51: connected database
+2021-08-12T21:08:17: error ElementClickInterceptedError: Element <a class="columns align-middle is-gapless" href=""> is not clickable at point (1291,30) because another element <div class="modalContent modalUserAuth appear-leave-active appear-leave-to"> obscures it
+2021-08-12T21:08:17:     at Object.throwDecodedError (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\error.js:517:15)
+2021-08-12T21:08:17:     at parseHttpResponse (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:642:13)
+2021-08-12T21:08:17:     at Executor.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:568:28)
+2021-08-12T21:08:17:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-12T21:08:17:     at async Driver.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:731:17)
+2021-08-12T21:08:17:     at async F:\ccm_script\ccm-scripts\service\selinum.service.js:76:7 {
+2021-08-12T21:08:17:   remoteStacktrace: 'WebDriverError@chrome://marionette/content/error.js:181:5\n' +
+2021-08-12T21:08:17:     'ElementClickInterceptedError@chrome://marionette/content/error.js:280:5\n' +
+2021-08-12T21:08:17:     'webdriverClickElement@chrome://marionette/content/interaction.js:166:11\n' +
+2021-08-12T21:08:17:     'interaction.clickElement@chrome://marionette/content/interaction.js:125:11\n' +
+2021-08-12T21:08:17:     'clickElement@chrome://marionette/content/actors/MarionetteCommandsChild.jsm:198:24\n' +
+2021-08-12T21:08:17:     'receiveMessage@chrome://marionette/content/actors/MarionetteCommandsChild.jsm:89:31\n'
+2021-08-12T21:08:17: }
+2021-08-12T21:13:04: connected database
+2021-08-12T21:13:58: error NoSuchWindowError: Browsing context has been discarded
+2021-08-12T21:13:58:     at Object.throwDecodedError (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\error.js:517:15)
+2021-08-12T21:13:58:     at parseHttpResponse (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:642:13)
+2021-08-12T21:13:58:     at Executor.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:568:28)
+2021-08-12T21:13:58:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-12T21:13:58:     at async Driver.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:731:17)
+2021-08-12T21:13:58:     at async Driver.findElements (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:1057:17) {
+2021-08-12T21:13:58:   remoteStacktrace: 'WebDriverError@chrome://marionette/content/error.js:181:5\n' +
+2021-08-12T21:13:58:     'NoSuchWindowError@chrome://marionette/content/error.js:415:5\n' +
+2021-08-12T21:13:58:     'assert.that/<@chrome://marionette/content/assert.js:460:13\n' +
+2021-08-12T21:13:58:     'assert.open@chrome://marionette/content/assert.js:168:4\n' +
+2021-08-12T21:13:58:     'GeckoDriver.prototype.findElements@chrome://marionette/content/driver.js:1550:10\n' +
+2021-08-12T21:13:58:     'despatch@chrome://marionette/content/server.js:307:40\n' +
+2021-08-12T21:13:58:     'execute@chrome://marionette/content/server.js:280:16\n' +
+2021-08-12T21:13:58:     'onPacket/<@chrome://marionette/content/server.js:253:20\n' +
+2021-08-12T21:13:58:     'onPacket@chrome://marionette/content/server.js:254:9\n' +
+2021-08-12T21:13:58:     '_onJSONObjectReady/<@chrome://marionette/content/transport.js:504:20\n'
+2021-08-12T21:13:58: }
+2021-08-12T21:15:27: err
+2021-08-12T21:15:27: connected database
+2021-08-12T21:15:28: connected database
+2021-08-12T21:15:44: connected database
+2021-08-12T21:17:33: connected database
+2021-08-12T21:18:55: error NoSuchWindowError: no such window: target window already closed
+2021-08-12T21:18:55: from unknown error: web view not found
+2021-08-12T21:18:55:   (Session info: chrome=92.0.4515.131)
+2021-08-12T21:18:55:     at Object.throwDecodedError (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\error.js:517:15)
+2021-08-12T21:18:55:     at parseHttpResponse (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:642:13)
+2021-08-12T21:18:55:     at Executor.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:568:28)
+2021-08-12T21:18:55:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-12T21:18:55:     at async Driver.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:731:17)
+2021-08-12T21:18:55:     at async Driver.findElements (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:1057:17) {
+2021-08-12T21:18:55:   remoteStacktrace: 'Backtrace:\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x01065843+2512963]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x00FFEED1+2092753]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x00F01F48+1056584]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x00EEBB46+965446]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x00F478F9+1341689]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x00F54002+1392642]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x00F454BB+1332411]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x00F21D14+1187092]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x00F22B79+1190777]\n' +
+2021-08-12T21:18:55:     '\tGetHandleVerifier [0x011E0C56+1501718]\n' +
+2021-08-12T21:18:55:     '\tGetHandleVerifier [0x0128E97F+2213695]\n' +
+2021-08-12T21:18:55:     '\tGetHandleVerifier [0x010E8C92+485970]\n' +
+2021-08-12T21:18:55:     '\tGetHandleVerifier [0x010E7D59+482073]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x0100471D+2115357]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x01008678+2131576]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x010087B2+2131890]\n' +
+2021-08-12T21:18:55:     '\tOrdinal0 [0x01011971+2169201]\n' +
+2021-08-12T21:18:55:     '\tBaseThreadInitThunk [0x76D9FA29+25]\n' +
+2021-08-12T21:18:55:     '\tRtlGetAppContainerNamedObjectPath [0x77A47A7E+286]\n' +
+2021-08-12T21:18:55:     '\tRtlGetAppContainerNamedObjectPath [0x77A47A4E+238]\n'
+2021-08-12T21:18:55: }
+2021-08-12T21:19:07: connected database
+2021-08-12T21:20:45: connected database
+2021-08-12T21:23:20: error NoSuchWindowError: no such window: target window already closed
+2021-08-12T21:23:20: from unknown error: web view not found
+2021-08-12T21:23:20:   (Session info: chrome=92.0.4515.131)
+2021-08-12T21:23:20:     at Object.throwDecodedError (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\error.js:517:15)
+2021-08-12T21:23:20:     at parseHttpResponse (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:642:13)
+2021-08-12T21:23:20:     at Executor.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:568:28)
+2021-08-12T21:23:20:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-12T21:23:20:     at async Driver.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:731:17)
+2021-08-12T21:23:20:     at async Driver.findElements (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:1057:17) {
+2021-08-12T21:23:20:   remoteStacktrace: 'Backtrace:\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x01065843+2512963]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x00FFEED1+2092753]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x00F01F48+1056584]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x00EEBB46+965446]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x00F478F9+1341689]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x00F54002+1392642]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x00F454BB+1332411]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x00F21D14+1187092]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x00F22B79+1190777]\n' +
+2021-08-12T21:23:20:     '\tGetHandleVerifier [0x011E0C56+1501718]\n' +
+2021-08-12T21:23:20:     '\tGetHandleVerifier [0x0128E97F+2213695]\n' +
+2021-08-12T21:23:20:     '\tGetHandleVerifier [0x010E8C92+485970]\n' +
+2021-08-12T21:23:20:     '\tGetHandleVerifier [0x010E7D59+482073]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x0100471D+2115357]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x01008678+2131576]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x010087B2+2131890]\n' +
+2021-08-12T21:23:20:     '\tOrdinal0 [0x01011971+2169201]\n' +
+2021-08-12T21:23:20:     '\tBaseThreadInitThunk [0x76D9FA29+25]\n' +
+2021-08-12T21:23:20:     '\tRtlGetAppContainerNamedObjectPath [0x77A47A7E+286]\n' +
+2021-08-12T21:23:20:     '\tRtlGetAppContainerNamedObjectPath [0x77A47A4E+238]\n'
+2021-08-12T21:23:20: }
+2021-08-12T21:32:45: connected database
+2021-08-12T21:32:51: window CDwindow-EC00EF5B68BE6B64AD6688A567EDC84D
+2021-08-12T21:33:16: connected database
+2021-08-12T21:33:21: window CDwindow-A4AE9206DA0E90221299A4D5DA5533CA
+2021-08-12T21:36:28: connected database
+2021-08-12T21:36:34: window CDwindow-EBD022C6B8065727A18919C65A696EBD
+2021-08-12T21:36:52: error ReferenceError: accept_cookie is not defined
+2021-08-12T21:36:52:     at F:\ccm_script\ccm-scripts\service\selinum.service.js:144:15
+2021-08-12T21:36:52:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-12T21:37:52: connected database
+2021-08-12T21:38:25: window CDwindow-1F15FB30F0461EFE867D23E56CA47392
+2021-08-12T21:38:53: result true
+2021-08-12T21:39:35: connected database
+2021-08-12T21:39:40: window CDwindow-F5000A4B7B530D848A777E08374EC989
+2021-08-12T21:41:06: result true
+2021-08-12T21:41:27: connected database
+2021-08-12T21:41:33: window CDwindow-246ED0AE681643FE52626482057AFDDB
+2021-08-12T21:42:03: result true
+2021-08-12T21:42:23: connected database
+2021-08-12T21:42:31: window CDwindow-6D651CC70D17ACDCE40CE5B91B5EB2B4
+2021-08-12T21:42:58: result true
+2021-08-12T21:43:20: connected database
+2021-08-12T21:43:56: window CDwindow-4604A4BD3369D79890253B61DF55C5DF
+2021-08-12T21:44:30: result true
+2021-08-12T21:44:48: connected database
+2021-08-12T21:45:22: window CDwindow-60E27F569A15BD66576AB9D58A164D47
+2021-08-12T21:47:26: result true
+2021-08-12T21:48:53: connected database
+2021-08-12T21:52:55: window CDwindow-22DE220140EA7333795F853CFC27D02C
+2021-08-12T21:53:17: result true
+2021-08-13T00:10:03: iiii
+2021-08-13T00:10:03: connected database
+2021-08-13T00:10:09: window CDwindow-5BE277671E32E6FE3486877CFC230FB6
+2021-08-13T00:11:28: iiii
+2021-08-13T00:11:28: err
+2021-08-13T00:11:29: connected database
+2021-08-13T00:11:35: window CDwindow-339402AA768C29871B115D8161F866F3
+2021-08-13T00:12:01: iiii
+2021-08-13T00:12:02: err
+2021-08-13T00:12:02: connected database
+2021-08-13T00:12:07: window CDwindow-2BBA4374A08714656EBFCBCC710D0C5D
+2021-08-13T00:12:16: error Error: ECONNREFUSED connect ECONNREFUSED 127.0.0.1:63157
+2021-08-13T00:12:16:     at ClientRequest.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\http\index.js:273:15)
+2021-08-13T00:12:16:     at ClientRequest.emit (events.js:375:28)
+2021-08-13T00:12:16:     at Socket.socketErrorListener (_http_client.js:475:9)
+2021-08-13T00:12:16:     at Socket.emit (events.js:375:28)
+2021-08-13T00:12:16:     at emitErrorNT (internal/streams/destroy.js:106:8)
+2021-08-13T00:12:16:     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+2021-08-13T00:12:16:     at processTicksAndRejections (internal/process/task_queues.js:82:21)
+2021-08-13T00:12:17: iiii
+2021-08-13T00:12:17: err
+2021-08-13T00:12:17: connected database
+2021-08-13T00:12:23: window CDwindow-F085EF20ED10FD0D4BF1CF6B01EDCE9E
+2021-08-13T00:49:53: connected database
