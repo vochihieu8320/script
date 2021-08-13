@@ -1,0 +1,4 @@
+campaign status:
+    0: đã permisson grandted
+    10: verifying 
+    20 fail to permisson grandted

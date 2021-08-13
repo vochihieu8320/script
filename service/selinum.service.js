@@ -66,7 +66,7 @@ function login(driver, until, By){
     catch (error) 
     {
       console.log("error", error)
-      reject(error)
+      resolve(false);
     }
     
   })
@@ -97,7 +97,7 @@ function listMyCampaign(driver, until, By){
     catch (error)
      {
       console.log("error", error)
-      reject(error)
+      resolve(false);
     }
   })
 
@@ -118,7 +118,7 @@ function detailCampaign(campaign_title, driver, until, By){
       }
     } catch (error) {
       console.log("error", error)
-      reject(error)
+      resolve(false)
     }
   })
  
@@ -129,8 +129,24 @@ function editCampaign(driver, until, By){
    return new Promise(async(resolve, reject)=>{
       try
        {
+        try {
+          const accept_cookie = await driver.findElement(By.id('CybotCookiebotDialogBodyButtonAccept'));
+          if(acceptCookie){
+            accept_cookie.click();
+          }
+        }
+         catch (error) 
+         {
+          
+        }
         const edit = "//span[text()='Campaign Editor']";
-        const  click_edit = await driver.wait(until.elementLocated(By.xpath(edit)));
+        let click_edit
+        try {
+            click_edit = await driver.findElement(By.xpath(edit));  
+        } catch (error) {
+          resolve(false);
+        }
+        
         if(click_edit)
         {
             try {
@@ -142,9 +158,8 @@ function editCampaign(driver, until, By){
              catch (error) 
              {
               
-            }
+              }
            
-
             await click_edit.click();
             const perk = "//span[text()='3. ']"
             //click perk
@@ -157,28 +172,30 @@ function editCampaign(driver, until, By){
               check_perk = await driver.findElement(By.xpath("//h1[text()='Where did it go?']"));                  
             } 
             catch (error) {
-              
+             
             }        
             if(check_perk)
-            {   driver.quit()
+            {  
                 resolve(false);
             } 
             else
-            {  driver.quit()
+            { 
               resolve(true);  
             }
             
           }
           else
-          {  driver.quit()
+          {
+             
             resolve(false);
+           
           }
       } 
       catch (error) 
       {
         console.log("error", error);
-        driver.quit()
-        reject(error);
+       
+        resolve(false);
       }
    })
 }

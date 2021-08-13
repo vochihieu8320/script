@@ -1,6 +1,5 @@
 const mysql = require('mysql');
 const service = require('./service/check-permission.service');
-const pm2 = require('pm2')
 
 
 const db = mysql.createConnection({
@@ -11,26 +10,78 @@ const db = mysql.createConnection({
     database : process.env.database, 
   });
 
-db.connect((err) =>{
-    if(err){
-        console.log("err")
-    }
-    console.log("connected database");
-});
 
 
-
-async function scripstart(campaign_title){
-    const result = await service.checkPermisson(campaign_title);
-    return result
+  var cron = require('node-cron');
+  cron.schedule('*/5 * * * *', () => {
+         listcampaign()
+    });
+async function connect_database() 
+{
+    return new Promise(async(resolve, reject)=>{
+        db.connect((err) =>{
+            if(err){
+                console.log("err", err);
+                reject(err);
+            }
+            console.log("connect database");
+            resolve(true);
+        });
+        
+    })
+    
 }
 
 
-process.on('message', function(packet) {
-    console.log("packet", packet.data);
-    if(packet.data)
-    {
-        const result = scripstart(packet.data.campaign.title);
-        console.log("result", result);
+async function listcampaign() 
+{
+    try {
+        await connect_database();
+        const query ="SELECT * FROM `campaign`";
+        db.query(query, async(err, result, fields) =>{
+            if(err)
+            {
+                reject(err);
+            }
+            else
+            {   
+               await service.checkPermisson(result, db)
+            
+            }
+
+        })
+        
+
+    } catch (error) {
+        
     }
-  });
+    
+}
+
+//  function scripstart(campaign_title){
+//     return new Promise(async(resolve, reject)=>{
+//         try {
+//             const result = await service.checkPermisson(campaign_title);
+//              resolve(result)    
+//         } catch (error) {
+//             reject(error)
+//         }
+        
+//     })
+   
+    
+// }
+
+
+// process.on('message', async function(packet) {
+//     if(packet.data)
+//     {
+//         const result = await scripstart(packet.data.campaign.title);
+//         console.log("result", result);
+      
+//     }
+//   });
+
+ 
+
+  
