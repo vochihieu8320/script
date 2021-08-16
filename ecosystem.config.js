@@ -17,7 +17,9 @@ module.exports= {
         "email_send": " chihieu.vo@hiq.ai",     
         "domain_test":"http://localhost:3012/",
         "verify_code" : "#H#I#Q#2021",
-        "email_password" : "qfkzpckysaccptsa"
+        "email_password" : "qfkzpckysaccptsa",
+        "indiegogo_username" : "support@hiq.ai",
+        "indiegogo_password" : "HiQ2017@11#17"
     },
     env_production:{
         "database_host": "10.128.0.5",
@@ -30,7 +32,9 @@ module.exports= {
         "url_web_hook_hiq": "https://hooks.slack.com/services/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",
         "email_send": "tuan.pham@hiq.ai",     
         "verify_code" : "#H#I#Q#2021",
-        "email_password" : "qfkzpckysaccptsa"
+        "email_password" : "qfkzpckysaccptsa",
+        "indiegogo_username" : "support@hiq.ai",
+        "indiegogo_password" : "HiQ2017@11#17"
     },
     error_file: 'err.log',
     out_file: 'out.log',

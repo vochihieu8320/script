@@ -1,7 +1,9 @@
 const mysql = require('mysql');
 const service = require('./service/check-permission.service');
-
-
+const selinum_servicve = require('./service/selinum.service');
+// const pm2 = require('pm2')
+const cron = require('node-cron');
+const { resolve, reject } = require('bluebird');
 const db = mysql.createConnection({
     host     :  process.env.database_host,
     port:       process.env.database_port,
@@ -10,13 +12,7 @@ const db = mysql.createConnection({
     database : process.env.database, 
   });
 
-
-
-  var cron = require('node-cron');
-  cron.schedule('*/5 * * * *', () => {
-         listcampaign()
-    });
-async function connect_database() 
+const connect_database = async()=> 
 {
     return new Promise(async(resolve, reject)=>{
         db.connect((err) =>{
@@ -24,7 +20,8 @@ async function connect_database()
                 console.log("err", err);
                 reject(err);
             }
-            console.log("connect database");
+            console.log("connected database");
+        
             resolve(true);
         });
         
@@ -32,56 +29,85 @@ async function connect_database()
     
 }
 
-
-async function listcampaign() 
-{
-    try {
-        await connect_database();
-        const query ="SELECT * FROM `campaign`";
-        db.query(query, async(err, result, fields) =>{
-            if(err)
-            {
-                reject(err);
-            }
-            else
-            {   
-               await service.checkPermisson(result, db)
-            
-            }
-
-        })
-        
-
-    } catch (error) {
-        
-    }
-    
+const acc = async()=>{
+    const data = await selinum_servicve.GetIndiegogo_acc(db);
+    process.env.indiegogo_username = data.iggAcount1.email;
+    process.env.indiegogo_password = data.iggAcount1.password;
 }
 
-//  function scripstart(campaign_title){
-//     return new Promise(async(resolve, reject)=>{
+
+
+//  async function listcampaign()
+// {
 //         try {
-//             const result = await service.checkPermisson(campaign_title);
-//              resolve(result)    
-//         } catch (error) {
-//             reject(error)
+//             const query ="SELECT * FROM `campaign` WHERE `ca_permisson` = 10";
+//             db.query(query, async(err, result, fields) =>{
+//                 if(err)
+//                 {
+//                     console.log("err", err)
+//                 }
+//                 else
+//                 {            
+//                     if(result.length > 0)
+//                     {
+//                         const data = await service.checkPermisson(result, db);  
+
+//                     }
+//                 }
+//             })
+            
+//         } 
+//         catch (error) 
+//         {
+//             console.log("err", error)
 //         }
-        
-//     })
-   
-    
 // }
 
 
-// process.on('message', async function(packet) {
-//     if(packet.data)
-//     {
-//         const result = await scripstart(packet.data.campaign.title);
-//         console.log("result", result);
-      
-//     }
-//   });
+const scriptStart = async()=>{
+    let isRunning = false;
+    cron.schedule('* * * * * *', async() => 
+    {   
+        if(isRunning === false)
+        {      
+            try
+            {   
+                const query ="SELECT * FROM `campaign` WHERE `ca_permisson` = 10 ORDER BY ca_updated_at LIMIT 2";
+                db.query(query, async(err, result, fields) =>{
+                    if(err)
+                    {
+                        console.log("err", err)
+                    }
+                    else
+                    {            
+                        if(result.length > 0)
+                        {
+                          
+                            isRunning = true
+                            const data = await service.checkPermisson(result, db);  
+                            isRunning = false;
+                          
 
- 
+                        }
+                       
+                    }
+                })
+            
+            }
+            catch (error) 
+            {
+                isRunning = false;
+                console.log("error", error);
+            }
+        
+        }
+    });   
+}
 
-  
+
+connect_database();
+acc()
+scriptStart();
+
+
+

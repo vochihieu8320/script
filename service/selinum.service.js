@@ -1,5 +1,35 @@
-// const {Builder, By, Key, until} = require('selenium-webdriver');
-// const chrome = require('selenium-webdriver/chrome');
+const {Builder, By, Key, until} = require('selenium-webdriver');
+const chrome = require('selenium-webdriver/chrome');
+
+function init() {
+  return new Promise(async (resolve, reject)=>{
+    try
+    {
+      let chrome_options = new chrome.Options().
+      addArguments(
+      '--disable-dev-shm-usage',
+      '--no-sandbox',
+      '--window-size=1920,1080',
+      'maxSession=1',
+      // 'headless'
+      )
+      let driver = await new Builder()
+      .forBrowser('chrome')
+      .setChromeOptions(chrome_options)
+      .build();
+      resolve(driver);     
+    } 
+    catch (error) 
+    {
+      reject(error)
+    }
+   
+  })
+  
+}
+
+
+
 
 
 function acceptCookie(){
@@ -22,6 +52,25 @@ function acceptCookie(){
   })
 }
 
+function GetIndiegogo_acc(db)
+{
+  return new Promise((resolve, reject)=>{
+      const query = "SELECT * FROM `setting` WHERE `se_key` = 'IGG_SETTING'";
+      db.query(query,(err, result, fields)=>{
+          if(err)
+          {
+              console.log("err", err);
+              reject(err);
+          }
+          else
+          {
+              const value = JSON.parse(result[0].se_value);
+              resolve(value);
+          }
+      })
+  })
+  
+}
 
 
 function login(driver, until, By){
@@ -35,15 +84,15 @@ function login(driver, until, By){
       const emailElement = await driver.wait(until.elementLocated(By.css('#email')));
       const passwordElement = await driver.wait(until.elementLocated(By.css('#password')));
       const btnSumit = await driver.wait(until.elementLocated(By.css('div.modalUserAuth-logIn-submitButton > button.buttonPrimary')));     
-      await emailElement.sendKeys('support@hiq.ai');
-      await passwordElement.sendKeys('HiQ2017@11#17');
+      await emailElement.sendKeys(process.env.indiegogo_username);
+      await passwordElement.sendKeys(process.env.indiegogo_password);
   
       // await emailElement.sendKeys('chihieu.vo@hiq.ai');
       // await passwordElement.sendKeys('0909400743');
       
       //accepted cookie, if we dont accept cookie we cant click button login
       try {
-        const accept_cookie = await driver.findElement(By.id('CybotCookiebotDialogBodyButtonAccept'));
+        const accept_cookie = await driver.wait(until.elementLocated(By.id('CybotCookiebotDialogBodyButtonAccept')));
         if(acceptCookie){
           await accept_cookie.click();
         }  
@@ -172,7 +221,7 @@ function editCampaign(driver, until, By){
               check_perk = await driver.findElement(By.xpath("//h1[text()='Where did it go?']"));                  
             } 
             catch (error) {
-             
+              resolve(true);  
             }        
             if(check_perk)
             {  
@@ -202,4 +251,4 @@ function editCampaign(driver, until, By){
 
 
 
-module.exports= {login ,acceptCookie, listMyCampaign, detailCampaign, editCampaign}
+module.exports= {login ,acceptCookie, listMyCampaign, detailCampaign, editCampaign,init, GetIndiegogo_acc}

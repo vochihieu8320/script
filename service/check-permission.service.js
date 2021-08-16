@@ -3,24 +3,14 @@ const chrome = require('selenium-webdriver/chrome');
 const selinum = require('./selinum.service')
 const campaign_service = require('./campaign.service');
 
+
 function checkPermisson(campaign, db){
   return new Promise(
         async(resolve, reject)=>{
-            let chrome_options = new chrome.Options().
-            addArguments(
-            '--disable-dev-shm-usage',
-            '--no-sandbox',
-            '--window-size=1920,1080',
-            'maxSession=1'
-            // 'headless'
-            )
-            let driver = await new Builder()
-            .forBrowser('chrome')
-            .setChromeOptions(chrome_options)
-            .build();   
-
             try
-            {
+            {   
+                const driver = await selinum.init();
+                global.chrome_driver =driver;        
                 await driver.get('https://www.indiegogo.com');
                 const login = await selinum.login(driver, until, By);
                 //login success
@@ -77,8 +67,10 @@ function checkPermisson(campaign, db){
                             }
                         }
                     }
+
+                    driver.quit();
+                    resolve(true);
                   
-                   driver.quit();
                 }
                 //login fail
                 else

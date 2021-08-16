@@ -1,112 +1,725 @@
-2021-08-13T16:20:10: ElementClickInterceptedError: element click intercepted: Element <a href="/projects/coffeejack-the-pocket-sized-barista">...</a> is not clickable at point (509, 639). Other element would receive the click: <div id="CybotCookiebotDialog" name="CybotCookiebotDialog" role="dialog" aria-describedby="CybotCookiebotDialogBodyContentTitle" lang="en" dir="ltr" ng-non-bindable="" style="display: block; padding-bottom: 18px; opacity: 1; top: 482px; width: 100%; height: auto;">...</div>
-2021-08-13T16:20:10:   (Session info: chrome=92.0.4515.131)
-2021-08-13T16:20:10:     at Object.throwDecodedError (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\error.js:517:15)
-2021-08-13T16:20:10:     at parseHttpResponse (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:642:13)
-2021-08-13T16:20:10:     at Executor.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\http.js:568:28)
-2021-08-13T16:20:10:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
-2021-08-13T16:20:10:     at async Driver.execute (F:\ccm_script\ccm-scripts\node_modules\selenium-webdriver\lib\webdriver.js:731:17) {
-2021-08-13T16:20:10:   remoteStacktrace: 'Backtrace:\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00FC5843+2512963]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00F5EED1+2092753]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00E61F48+1056584]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00E926DB+1255131]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00E909DF+1247711]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00E8E7AD+1238957]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00E8D65D+1234525]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00E83157+1192279]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00EA55F3+1332723]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00E82F76+1191798]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00EA56DA+1332954]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00EB487F+1394815]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00EA54BB+1332411]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00E81D14+1187092]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00E82B79+1190777]\n' +
-2021-08-13T16:20:10:     '\tGetHandleVerifier [0x01140C56+1501718]\n' +
-2021-08-13T16:20:10:     '\tGetHandleVerifier [0x011EE97F+2213695]\n' +
-2021-08-13T16:20:10:     '\tGetHandleVerifier [0x01048C92+485970]\n' +
-2021-08-13T16:20:10:     '\tGetHandleVerifier [0x01047D59+482073]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00F6471D+2115357]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00F68678+2131576]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00F687B2+2131890]\n' +
-2021-08-13T16:20:10:     '\tOrdinal0 [0x00F71971+2169201]\n' +
-2021-08-13T16:20:10:     '\tBaseThreadInitThunk [0x7628FA29+25]\n' +
-2021-08-13T16:20:10:     '\tRtlGetAppContainerNamedObjectPath [0x76F67A7E+286]\n' +
-2021-08-13T16:20:10:     '\tRtlGetAppContainerNamedObjectPath [0x76F67A4E+238]\n'
-2021-08-13T16:20:10: }
-2021-08-13T16:32:31: ReferenceError: listcampaign is not defined
-2021-08-13T16:32:31:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:84:3)
-2021-08-13T16:32:31:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:31:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:31:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:31:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:31:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
-2021-08-13T16:32:31:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:31:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:31:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:31:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:31: ReferenceError: listcampaign is not defined
-2021-08-13T16:32:31:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:84:3)
-2021-08-13T16:32:31:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:31:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:31:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:31:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:31:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
-2021-08-13T16:32:31:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:31:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:31:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:31:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:32: ReferenceError: listcampaign is not defined
-2021-08-13T16:32:32:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:84:3)
-2021-08-13T16:32:32:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:32:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:32:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:32:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:32:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
-2021-08-13T16:32:32:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:32:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:32:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:32:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:33: ReferenceError: listcampaign is not defined
-2021-08-13T16:32:33:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:84:3)
-2021-08-13T16:32:33:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:33:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:33:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:33:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:33:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
-2021-08-13T16:32:33:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:33:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:33:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:33:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:34: ReferenceError: listcampaign is not defined
-2021-08-13T16:32:34:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:84:3)
-2021-08-13T16:32:34:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:34:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:34:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:34:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:34:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
-2021-08-13T16:32:34:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:34:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:34:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:34:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:35: ReferenceError: listcampaign is not defined
-2021-08-13T16:32:35:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:84:3)
-2021-08-13T16:32:35:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:35:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:35:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:35:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:35:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
-2021-08-13T16:32:35:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:35:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:35:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:35:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:36: ReferenceError: listcampaign is not defined
-2021-08-13T16:32:36:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:84:3)
-2021-08-13T16:32:36:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:36:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:36:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:36:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
-2021-08-13T16:32:36:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
-2021-08-13T16:32:36:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
-2021-08-13T16:32:36:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
-2021-08-13T16:32:36:     at Module.load (internal/modules/cjs/loader.js:950:32)
-2021-08-13T16:32:36:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T15:54:55: /1 is a invalid expression for minute
+2021-08-16T16:00:45: ReferenceError: test is not defined
+2021-08-16T16:00:45:     at scriptStart (F:\ccm_script\ccm-scripts\index.js:59:26)
+2021-08-16T16:00:45:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:99:1)
+2021-08-16T16:00:45:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T16:00:45:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T16:00:45:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T16:00:45:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T16:00:45:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T16:00:45:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T16:00:45:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T16:00:45:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T16:36:31: 
+2021-08-16T16:36:31: --->
+2021-08-16T16:36:31: 
+2021-08-16T16:36:31: [14808:000002456DE51A70]   150109 ms: Scavenge 10.7 (11.9) -> 10.1 (13.1) MB, 2.6 / 0.0 ms  (average mu = 1.000, current mu = 0.983) allocation failure 
+2021-08-16T16:36:31: rag
+2021-08-16T16:36:31: e mu = 1.000, current m
+2021-08-16T16:36:31: u = 0.983) al
+2021-08-16T16:36:31: l
+2021-08-16T16:36:31: ocation failure 
+2021-08-16T16:36:31: 000002456DE51A70]   153411 ms: Scavenge 10.9 (15.1) -> 10.2 (15.4) MB, 3.5 / 0.0 ms  (average mu = 1.00
+2021-08-16T16:36:31: 0, current mu = 0.983) allocation failure 
+2021-08-16T16:36:31: 
+2021-08-16T16:36:31: 
+2021-08-16T16:36:31:  
+2021-08-16T16:36:31: JS stacktrace --->
+2021-08-16T16:36:31: 
+2021-08-16T16:36:31: FATAL ERROR: Committing semi space failed. Allocation failed - JavaScript heap out of memory
+2021-08-16T16:36:31:  1: 00007FF624D1481F 
+2021-08-16T16:36:31: 00007FF624
+2021-08-16T16:36:31: CB7F26 
+2021-08-16T16:36:31:  3: 00007FF624CB8E26 
+2021-08-16T16:36:31:  4: 00007FF6255923BE 
+2021-08-16T16:36:31:  5: 00007FF62557718D 
+2021-08-16T16:36:31:  6: 00007FF6254202CC 
+2021-08-16T16:36:31:  7: 00007FF62542888F 
+2021-08-16T16:36:31:  8: 00007FF62541D3D1 
+2021-08-16T16:36:31: 7FF62541B5D5 
+2021-08-16T16:36:31: 10: 00007FF62543BA3B 
+2021-08-16T16:36:31: 11: 00007FF62516A0B1 
+2021-08-16T16:36:31: 12: 00007FF62561B27D 
+2021-08-16T16:36:31: 13: 00007FF62569F1F1 
+2021-08-16T16:36:31: 14: 00007FF6255B3722 
+2021-08-16T16:36:31: 15: 00007FF6255B3722 
+2021-08-16T16:36:31: 16: 00007FF6255B3722 
+2021-08-16T16:36:31: 07FF6255B3722 
+2021-08-16T16:36:31: 18: 00007FF6255B3722 
+2021-08-16T16:36:31: 1
+2021-08-16T16:36:31: 9
+2021-08-16T16:36:31: :
+2021-08-16T16:36:31:  
+2021-08-16T16:36:31: 0
+2021-08-16T16:36:31: 00
+2021-08-16T16:36:31: 0
+2021-08-16T16:36:31: 7
+2021-08-16T16:36:31: F
+2021-08-16T16:36:31: F
+2021-08-16T16:36:31: 6
+2021-08-16T16:36:31: 2
+2021-08-16T16:36:31: 5
+2021-08-16T16:36:31: 5
+2021-08-16T16:36:31: AD359 
+2021-08-16T16:36:31: 20: 00007FF6255B3722 
+2021-08-16T16:36:31: 
+2021-08-16T16:36:31: 2
+2021-08-16T16:36:31: : 00007FF62565B
+2021-08-16T16:36:31: AC0 
+2021-08-16T16:36:31: 23: 00007FF6255AF62A 
+2021-08-16T16:36:31: 24: 00007FF625699E03 
+2021-08-16T16:36:31: 25: 00007FF6255B3722 
+2021-08-16T16:36:31: 26: 00007FF6255B3722 
+2021-08-16T16:36:31: 27: 00007FF62565BAC0 
+2021-08-16T16:36:31: 28: 00007FF6255AF62A 
+2021-08-16T16:36:31: 29: 00007FF625699E03 
+2021-08-16T16:36:31: 30: 00007FF6255B3722 
+2021-08-16T16:36:31: F6255B3722 
+2021-08-16T16:36:31: 3
+2021-08-16T16:36:31: 2: 00007FF6255B3722 
+2021-08-16T16:36:31:  
+2021-08-16T16:36:31: 34: 00007FF6255B3722 
+2021-08-16T16:36:31: 35: 00007FF6255AD359 
+2021-08-16T16:36:31: 36: 00007FF6255B3722 
+2021-08-16T16:36:31: 9 
+2021-08-16T16:36:31: 3722 
+2021-08-16T16:36:31: 39: 00007FF6255B3722 
+2021-08-16T16:36:31: 40: 00007FF6255B3722 
+2021-08-16T16:36:31: 41: 00007FF6255AD359 
+2021-08-16T16:36:31: 42: 00007FF6255B3722 
+2021-08-16T16:36:31: 43: 00007FF6255B3722 
+2021-08-16T16:36:31: 44: 00007FF6255B3722 
+2021-08-16T16:36:31: 45: 00007FF6255B3722 
+2021-08-16T16:36:31: 46: 00007FF6255B3722 
+2021-08-16T16:36:31: 47: 00007FF6255AD359 
+2021-08-16T16:36:31: 48: 00007FF6255B3722 
+2021-08-16T16:36:31: 49: 00007FF6255AD359 
+2021-08-16T16:36:31: 07FF62
+2021-08-16T16:36:31: 55B3722 
+2021-08-16T16:36:31: FF6255B3722 
+2021-08-16T16:36:31: 52: 00007FF6255B3722 
+2021-08-16T16:36:31: 53: 
+2021-08-16T16:36:31: 00007FF6255B3722
+2021-08-16T16:36:31:  
+2021-08-16T16:36:31: 54: 00007FF6255B13DE 
+2021-08-16T16:36:31: 55: 00007FF6255B0FCC 
+2021-08-16T16:36:31: 56: 00007FF625480BE2 
+2021-08-16T16:36:31: 57: 00007FF62548044F 
+2021-08-16T16:36:31: 58: 00007FF62556C567 
+2021-08-16T16:36:31: 59: 00007FF624D41C3B 
+2021-08-16T16:36:31: 60: 00007FF624D39834 
+2021-08-16T16:36:31: 61: 00007FF624BDFC33 
+2021-08-16T16:36:31: 62: 00007FF624BE07AD 
+2021-08-16T16:36:31: 63: 00007FF624BDB349 
+2021-08-16T16:36:31: 00007FF624D5B97B 
+2021-08-16T16:36:31: 65: 00007FF624D7183C 
+2021-08-16T16:36:31: 66: 00007FF624D71B4A 
+2021-08-16T16:36:31: 67: 00007FF624C72BF5 
+2021-08-16T16:36:31: 68: 00007FF624CE70F7 
+2021-08-16T16:36:31: 69: 00007FF624B4679C 
+2021-08-16T16:36:31: 70: 00007FF625B10DE8 
+2021-08-16T16:36:31: 71: 00007FFBD2807034 
+2021-08-16T16:36:31: 72: 00007FFBD4742651 RtlUserThreadStart+33
+2021-08-16T17:14:48: Error: connect ECONNREFUSED 127.0.0.1:3306
+2021-08-16T17:14:48:     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)
+2021-08-16T17:14:48:     --------------------
+2021-08-16T17:14:48:     at Protocol._enqueue (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+2021-08-16T17:14:48:     at Protocol.handshake (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+2021-08-16T17:14:48:     at Connection.connect (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:116:18)
+2021-08-16T17:14:48:     at F:\ccm_script\ccm-scripts\index.js:16:12
+2021-08-16T17:14:48:     at new Promise (<anonymous>)
+2021-08-16T17:14:48:     at connect_database (F:\ccm_script\ccm-scripts\index.js:15:12)
+2021-08-16T17:14:48:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:99:1)
+2021-08-16T17:14:48:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:14:48:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:14:48:     at Module.load (internal/modules/cjs/loader.js:950:32) {
+2021-08-16T17:14:48:   errno: -4078,
+2021-08-16T17:14:48:   code: 'ECONNREFUSED',
+2021-08-16T17:14:48:   syscall: 'connect',
+2021-08-16T17:14:48:   address: '127.0.0.1',
+2021-08-16T17:14:48:   port: 3306,
+2021-08-16T17:14:48:   fatal: true
+2021-08-16T17:14:48: }
+2021-08-16T17:48:23: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:23:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:23:                          ^^^^^
+2021-08-16T17:48:23: 
+2021-08-16T17:48:23: SyntaxError: await is only valid in async function
+2021-08-16T17:48:23:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:23:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:23:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:23:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:23:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:23:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:23:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:23:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:23:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:23:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:24: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:24:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:24:                          ^^^^^
+2021-08-16T17:48:24: 
+2021-08-16T17:48:24: SyntaxError: await is only valid in async function
+2021-08-16T17:48:24:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:24:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:24:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:24:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:24:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:24:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:24:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:24:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:24:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:24:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:25: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:25:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:25:                          ^^^^^
+2021-08-16T17:48:25: 
+2021-08-16T17:48:25: SyntaxError: await is only valid in async function
+2021-08-16T17:48:25:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:25:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:25:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:25:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:25:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:25:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:25:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:25:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:25:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:25:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:26: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:26:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:26:                          ^^^^^
+2021-08-16T17:48:26: 
+2021-08-16T17:48:26: SyntaxError: await is only valid in async function
+2021-08-16T17:48:26:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:26:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:26:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:26:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:26:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:26:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:26:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:26:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:26:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:26:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:27: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:27:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:27:                          ^^^^^
+2021-08-16T17:48:27: 
+2021-08-16T17:48:27: SyntaxError: await is only valid in async function
+2021-08-16T17:48:27:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:27:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:27:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:27:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:27:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:27:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:27:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:27:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:27:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:27:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:28: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:28:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:28:                          ^^^^^
+2021-08-16T17:48:28: 
+2021-08-16T17:48:28: SyntaxError: await is only valid in async function
+2021-08-16T17:48:28:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:28:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:28:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:28:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:28:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:28:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:28:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:28:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:28:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:28:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:29: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:29:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:29:                          ^^^^^
+2021-08-16T17:48:29: 
+2021-08-16T17:48:29: SyntaxError: await is only valid in async function
+2021-08-16T17:48:29:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:29:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:29:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:29:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:29:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:29:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:29:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:29:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:29:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:29:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:30: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:30:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:30:                          ^^^^^
+2021-08-16T17:48:30: 
+2021-08-16T17:48:30: SyntaxError: await is only valid in async function
+2021-08-16T17:48:30:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:30:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:30:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:30:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:30:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:30:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:30:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:30:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:30:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:30:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:31: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:31:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:31:                          ^^^^^
+2021-08-16T17:48:31: 
+2021-08-16T17:48:31: SyntaxError: await is only valid in async function
+2021-08-16T17:48:31:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:31:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:31:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:31:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:31:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:31:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:31:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:31:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:31:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:31:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:32: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:32:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:32:                          ^^^^^
+2021-08-16T17:48:32: 
+2021-08-16T17:48:32: SyntaxError: await is only valid in async function
+2021-08-16T17:48:32:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:32:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:32:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:32:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:32:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:32:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:32:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:32:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:32:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:32:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:34: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:34:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:34:                          ^^^^^
+2021-08-16T17:48:34: 
+2021-08-16T17:48:34: SyntaxError: await is only valid in async function
+2021-08-16T17:48:34:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:34:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:34:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:34:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:34:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:34:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:34:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:34:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:34:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:34:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:35: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:35:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:35:                          ^^^^^
+2021-08-16T17:48:35: 
+2021-08-16T17:48:35: SyntaxError: await is only valid in async function
+2021-08-16T17:48:35:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:35:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:35:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:35:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:35:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:35:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:35:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:35:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:35:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:35:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:36: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:36:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:36:                          ^^^^^
+2021-08-16T17:48:36: 
+2021-08-16T17:48:36: SyntaxError: await is only valid in async function
+2021-08-16T17:48:36:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:36:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:36:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:36:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:36:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:36:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:36:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:36:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:36:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:36:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:37: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:37:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:37:                          ^^^^^
+2021-08-16T17:48:37: 
+2021-08-16T17:48:37: SyntaxError: await is only valid in async function
+2021-08-16T17:48:37:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:37:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:37:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:37:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:37:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:37:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:37:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:37:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:37:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:37:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:38: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:38:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:38:                          ^^^^^
+2021-08-16T17:48:38: 
+2021-08-16T17:48:38: SyntaxError: await is only valid in async function
+2021-08-16T17:48:38:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:38:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:38:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:38:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:38:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:38:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:38:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:38:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:38:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:38:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:39: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:39:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:39:                          ^^^^^
+2021-08-16T17:48:39: 
+2021-08-16T17:48:39: SyntaxError: await is only valid in async function
+2021-08-16T17:48:39:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:39:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:39:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:39:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:39:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:39:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:39:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:39:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:39:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:39:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:40: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:40:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:40:                          ^^^^^
+2021-08-16T17:48:40: 
+2021-08-16T17:48:40: SyntaxError: await is only valid in async function
+2021-08-16T17:48:40:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:40:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:40:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:40:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:40:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:40:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:40:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:40:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:40:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:40:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:40: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:40:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:40:                          ^^^^^
+2021-08-16T17:48:40: 
+2021-08-16T17:48:40: SyntaxError: await is only valid in async function
+2021-08-16T17:48:40:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:40:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:40:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:40:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:40:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:40:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:40:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:40:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:40:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:40:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:41: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:41:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:41:                          ^^^^^
+2021-08-16T17:48:41: 
+2021-08-16T17:48:41: SyntaxError: await is only valid in async function
+2021-08-16T17:48:41:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:41:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:41:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:41:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:41:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:41:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:41:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:41:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:41:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:41:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:42: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:42:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:42:                          ^^^^^
+2021-08-16T17:48:42: 
+2021-08-16T17:48:42: SyntaxError: await is only valid in async function
+2021-08-16T17:48:42:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:42:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:42:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:42:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:42:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:42:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:42:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:42:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:42:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:42:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:42: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:42:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:42:                          ^^^^^
+2021-08-16T17:48:42: 
+2021-08-16T17:48:42: SyntaxError: await is only valid in async function
+2021-08-16T17:48:42:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:42:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:42:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:42:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:42:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:42:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:42:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:42:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:42:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:42:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:43: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:43:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:43:                          ^^^^^
+2021-08-16T17:48:43: 
+2021-08-16T17:48:43: SyntaxError: await is only valid in async function
+2021-08-16T17:48:43:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:43:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:43:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:43:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:43:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:43:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:43:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:43:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:43:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:43:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:44: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:44:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:44:                          ^^^^^
+2021-08-16T17:48:44: 
+2021-08-16T17:48:44: SyntaxError: await is only valid in async function
+2021-08-16T17:48:44:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:44:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:44:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:44:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:44:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:44:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:44:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:44:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:44:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:44:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:44: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:44:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:44:                          ^^^^^
+2021-08-16T17:48:44: 
+2021-08-16T17:48:44: SyntaxError: await is only valid in async function
+2021-08-16T17:48:44:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:44:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:44:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:44:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:44:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:44:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:44:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:44:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:44:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:44:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:45: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:45:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:45:                          ^^^^^
+2021-08-16T17:48:45: 
+2021-08-16T17:48:45: SyntaxError: await is only valid in async function
+2021-08-16T17:48:45:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:45:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:45:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:45:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:45:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:45:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:45:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:45:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:45:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:45:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:46: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:46:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:46:                          ^^^^^
+2021-08-16T17:48:46: 
+2021-08-16T17:48:46: SyntaxError: await is only valid in async function
+2021-08-16T17:48:46:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:46:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:46:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:46:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:46:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:46:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:46:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:46:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:46:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:46:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:47: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:47:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:47:                          ^^^^^
+2021-08-16T17:48:47: 
+2021-08-16T17:48:47: SyntaxError: await is only valid in async function
+2021-08-16T17:48:47:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:47:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:47:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:47:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:47:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:47:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:47:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:47:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:47:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:47:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:47: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:47:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:47:                          ^^^^^
+2021-08-16T17:48:47: 
+2021-08-16T17:48:47: SyntaxError: await is only valid in async function
+2021-08-16T17:48:47:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:47:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:47:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:47:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:47:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:47:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:47:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:47:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:47:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:47:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:48: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:48:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:48:                          ^^^^^
+2021-08-16T17:48:48: 
+2021-08-16T17:48:48: SyntaxError: await is only valid in async function
+2021-08-16T17:48:48:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:48:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:48:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:48:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:48:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:48:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:48:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:48:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:48:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:48:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:49: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:49:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:49:                          ^^^^^
+2021-08-16T17:48:49: 
+2021-08-16T17:48:49: SyntaxError: await is only valid in async function
+2021-08-16T17:48:49:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:49:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:49:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:49:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:49:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:49:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:49:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:49:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:49:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:49:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:50: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:50:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:50:                          ^^^^^
+2021-08-16T17:48:50: 
+2021-08-16T17:48:50: SyntaxError: await is only valid in async function
+2021-08-16T17:48:50:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:50:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:50:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:50:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:50:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:50:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:50:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:50:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:50:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:50:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:52: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:52:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:52:                          ^^^^^
+2021-08-16T17:48:52: 
+2021-08-16T17:48:52: SyntaxError: await is only valid in async function
+2021-08-16T17:48:52:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:52:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:52:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:52:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:52:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:52:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:52:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:52:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:52:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:52:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:52: F:\ccm_script\ccm-scripts\index.js:24
+2021-08-16T17:48:52:             const data = await selinum_servicve.GetIndiegogo_acc(db);
+2021-08-16T17:48:52:                          ^^^^^
+2021-08-16T17:48:52: 
+2021-08-16T17:48:52: SyntaxError: await is only valid in async function
+2021-08-16T17:48:52:     at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+2021-08-16T17:48:52:     at Module._compile (internal/modules/cjs/loader.js:1049:27)
+2021-08-16T17:48:52:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:52:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:52:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:48:52:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T17:48:52:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T17:48:52:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T17:48:52:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T17:48:52:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T17:50:37: ReferenceError: data is not defined
+2021-08-16T17:50:37:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\index.js:24:33)
+2021-08-16T17:50:37:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:37:     at Handshake._callback (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:488:16)
+2021-08-16T17:50:37:     at Handshake.Sequence.end (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+2021-08-16T17:50:37:     at Handshake.Sequence.OkPacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+2021-08-16T17:50:37:     at Protocol._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+2021-08-16T17:50:37:     at Parser._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:433:10)
+2021-08-16T17:50:37:     at Parser.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:43:10)
+2021-08-16T17:50:37:     at Protocol.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+2021-08-16T17:50:37:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:88:28)
+2021-08-16T17:50:37:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:37:     at Socket.emit (events.js:375:28)
+2021-08-16T17:50:37:     at addChunk (internal/streams/readable.js:290:12)
+2021-08-16T17:50:37:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-08-16T17:50:37:     at Socket.Readable.push (internal/streams/readable.js:204:10)
+2021-08-16T17:50:37:     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+2021-08-16T17:50:38: ReferenceError: data is not defined
+2021-08-16T17:50:38:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\index.js:24:33)
+2021-08-16T17:50:38:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:38:     at Handshake._callback (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:488:16)
+2021-08-16T17:50:38:     at Handshake.Sequence.end (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+2021-08-16T17:50:38:     at Handshake.Sequence.OkPacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+2021-08-16T17:50:38:     at Protocol._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+2021-08-16T17:50:38:     at Parser._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:433:10)
+2021-08-16T17:50:38:     at Parser.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:43:10)
+2021-08-16T17:50:38:     at Protocol.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+2021-08-16T17:50:38:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:88:28)
+2021-08-16T17:50:38:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:38:     at Socket.emit (events.js:375:28)
+2021-08-16T17:50:38:     at addChunk (internal/streams/readable.js:290:12)
+2021-08-16T17:50:38:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-08-16T17:50:38:     at Socket.Readable.push (internal/streams/readable.js:204:10)
+2021-08-16T17:50:38:     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+2021-08-16T17:50:39: ReferenceError: data is not defined
+2021-08-16T17:50:39:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\index.js:24:33)
+2021-08-16T17:50:39:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:39:     at Handshake._callback (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:488:16)
+2021-08-16T17:50:39:     at Handshake.Sequence.end (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+2021-08-16T17:50:39:     at Handshake.Sequence.OkPacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+2021-08-16T17:50:39:     at Protocol._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+2021-08-16T17:50:39:     at Parser._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:433:10)
+2021-08-16T17:50:39:     at Parser.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:43:10)
+2021-08-16T17:50:39:     at Protocol.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+2021-08-16T17:50:39:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:88:28)
+2021-08-16T17:50:39:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:39:     at Socket.emit (events.js:375:28)
+2021-08-16T17:50:39:     at addChunk (internal/streams/readable.js:290:12)
+2021-08-16T17:50:39:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-08-16T17:50:39:     at Socket.Readable.push (internal/streams/readable.js:204:10)
+2021-08-16T17:50:39:     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+2021-08-16T17:50:40: ReferenceError: data is not defined
+2021-08-16T17:50:40:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\index.js:24:33)
+2021-08-16T17:50:40:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:40:     at Handshake._callback (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:488:16)
+2021-08-16T17:50:40:     at Handshake.Sequence.end (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+2021-08-16T17:50:40:     at Handshake.Sequence.OkPacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+2021-08-16T17:50:40:     at Protocol._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+2021-08-16T17:50:40:     at Parser._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:433:10)
+2021-08-16T17:50:40:     at Parser.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:43:10)
+2021-08-16T17:50:40:     at Protocol.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+2021-08-16T17:50:40:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:88:28)
+2021-08-16T17:50:40:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:40:     at Socket.emit (events.js:375:28)
+2021-08-16T17:50:40:     at addChunk (internal/streams/readable.js:290:12)
+2021-08-16T17:50:40:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-08-16T17:50:40:     at Socket.Readable.push (internal/streams/readable.js:204:10)
+2021-08-16T17:50:40:     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+2021-08-16T17:50:41: ReferenceError: data is not defined
+2021-08-16T17:50:41:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\index.js:24:33)
+2021-08-16T17:50:41:     at Handshake.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:41:     at Handshake._callback (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:488:16)
+2021-08-16T17:50:41:     at Handshake.Sequence.end (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+2021-08-16T17:50:41:     at Handshake.Sequence.OkPacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+2021-08-16T17:50:41:     at Protocol._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+2021-08-16T17:50:41:     at Parser._parsePacket (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:433:10)
+2021-08-16T17:50:41:     at Parser.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Parser.js:43:10)
+2021-08-16T17:50:41:     at Protocol.write (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+2021-08-16T17:50:41:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:88:28)
+2021-08-16T17:50:41:     at Socket.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:526:10)
+2021-08-16T17:50:41:     at Socket.emit (events.js:375:28)
+2021-08-16T17:50:41:     at addChunk (internal/streams/readable.js:290:12)
+2021-08-16T17:50:41:     at readableAddChunk (internal/streams/readable.js:265:9)
+2021-08-16T17:50:41:     at Socket.Readable.push (internal/streams/readable.js:204:10)
+2021-08-16T17:50:41:     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+2021-08-16T17:52:39: TypeError: Cannot read property 'email' of undefined
+2021-08-16T17:52:39:     at acc (F:\ccm_script\ccm-scripts\index.js:34:41)
+2021-08-16T17:52:39:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
