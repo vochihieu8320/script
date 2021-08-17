@@ -11,7 +11,7 @@ module.exports= {
         "database_port": 3306,
         "database_user": "root",
         "password": "",
-        "database": "hiq_ccm_prod",
+        "database": "hiq_ccm_test",
         "indiegogo_username" : "support@hiq.ai",
         "indiegogo_password" : "HiQ2017@11#17",
         "homePageUrl": "https://www.indiegogo.com"
@@ -21,7 +21,7 @@ module.exports= {
         "database_port": 3306,
         "database_user": "campaign-service",
         "password": "cSagzeh9r9XNTHHR",
-        "database": "hiq_ccm_prod",
+        "database": "hiq_ccm_test",
         "indiegogo_username" : "support@hiq.ai",
         "indiegogo_password" : "HiQ2017@11#17",
         "homePageUrl": "https://www.indiegogo.com"
