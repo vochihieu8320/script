@@ -723,3 +723,55 @@
 2021-08-16T17:52:39: TypeError: Cannot read property 'email' of undefined
 2021-08-16T17:52:39:     at acc (F:\ccm_script\ccm-scripts\index.js:34:41)
 2021-08-16T17:52:39:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-08-16T20:11:50: Error: connect ECONNREFUSED 127.0.0.1:3306
+2021-08-16T20:11:50:     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)
+2021-08-16T20:11:50:     --------------------
+2021-08-16T20:11:50:     at Protocol._enqueue (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+2021-08-16T20:11:50:     at Protocol.handshake (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+2021-08-16T20:11:50:     at Connection.connect (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:116:18)
+2021-08-16T20:11:50:     at F:\ccm_script\ccm-scripts\index.js:18:12
+2021-08-16T20:11:50:     at new Promise (<anonymous>)
+2021-08-16T20:11:50:     at connect_database (F:\ccm_script\ccm-scripts\index.js:17:12)
+2021-08-16T20:11:50:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:108:1)
+2021-08-16T20:11:50:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T20:11:50:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T20:11:50:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T20:11:50:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T20:11:50:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T20:11:50:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T20:11:50:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T20:11:50:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T20:11:50:     at Function.Module._load (internal/modules/cjs/loader.js:790:14) {
+2021-08-16T20:11:50:   errno: -4078,
+2021-08-16T20:11:50:   code: 'ECONNREFUSED',
+2021-08-16T20:11:50:   syscall: 'connect',
+2021-08-16T20:11:50:   address: '127.0.0.1',
+2021-08-16T20:11:50:   port: 3306,
+2021-08-16T20:11:50:   fatal: true
+2021-08-16T20:11:50: }
+2021-08-16T20:11:50: Error: connect ECONNREFUSED 127.0.0.1:3306
+2021-08-16T20:11:50:     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)
+2021-08-16T20:11:50:     --------------------
+2021-08-16T20:11:50:     at Protocol._enqueue (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+2021-08-16T20:11:50:     at Protocol.handshake (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+2021-08-16T20:11:50:     at Connection.connect (F:\ccm_script\ccm-scripts\node_modules\mysql\lib\Connection.js:116:18)
+2021-08-16T20:11:50:     at F:\ccm_script\ccm-scripts\index.js:18:12
+2021-08-16T20:11:50:     at new Promise (<anonymous>)
+2021-08-16T20:11:50:     at connect_database (F:\ccm_script\ccm-scripts\index.js:17:12)
+2021-08-16T20:11:50:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\index.js:108:1)
+2021-08-16T20:11:50:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T20:11:50:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T20:11:50:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T20:11:50:     at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2021-08-16T20:11:50:     at Object.<anonymous> (F:\ccm_script\ccm-scripts\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2021-08-16T20:11:50:     at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2021-08-16T20:11:50:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2021-08-16T20:11:50:     at Module.load (internal/modules/cjs/loader.js:950:32)
+2021-08-16T20:11:50:     at Function.Module._load (internal/modules/cjs/loader.js:790:14) {
+2021-08-16T20:11:50:   errno: -4078,
+2021-08-16T20:11:50:   code: 'ECONNREFUSED',
+2021-08-16T20:11:50:   syscall: 'connect',
+2021-08-16T20:11:50:   address: '127.0.0.1',
+2021-08-16T20:11:50:   port: 3306,
+2021-08-16T20:11:50:   fatal: true
+2021-08-16T20:11:50: }

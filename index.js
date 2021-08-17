@@ -1,9 +1,7 @@
 const mysql = require('mysql');
 const service = require('./service/check-permission.service');
 const selinum_servicve = require('./service/selinum.service');
-// const pm2 = require('pm2')
 const cron = require('node-cron');
-const { resolve, reject } = require('bluebird');
 const db = mysql.createConnection({
     host     :  process.env.database_host,
     port:       process.env.database_port,
@@ -19,9 +17,7 @@ const connect_database = async()=>
             if(err){
                 console.log("err", err);
                 reject(err);
-            }
-            console.log("connected database");
-        
+            }  
             resolve(true);
         });
         
@@ -33,36 +29,9 @@ const acc = async()=>{
     const data = await selinum_servicve.GetIndiegogo_acc(db);
     process.env.indiegogo_username = data.iggAcount1.email;
     process.env.indiegogo_password = data.iggAcount1.password;
+    process.env.homePageUrl = data.homePageUrl
+    
 }
-
-
-
-//  async function listcampaign()
-// {
-//         try {
-//             const query ="SELECT * FROM `campaign` WHERE `ca_permisson` = 10";
-//             db.query(query, async(err, result, fields) =>{
-//                 if(err)
-//                 {
-//                     console.log("err", err)
-//                 }
-//                 else
-//                 {            
-//                     if(result.length > 0)
-//                     {
-//                         const data = await service.checkPermisson(result, db);  
-
-//                     }
-//                 }
-//             })
-            
-//         } 
-//         catch (error) 
-//         {
-//             console.log("err", error)
-//         }
-// }
-
 
 const scriptStart = async()=>{
     let isRunning = false;

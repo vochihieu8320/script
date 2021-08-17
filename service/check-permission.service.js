@@ -11,7 +11,7 @@ function checkPermisson(campaign, db){
             {   
                 const driver = await selinum.init();
                 global.chrome_driver =driver;        
-                await driver.get('https://www.indiegogo.com');
+                await driver.get(process.env.homePageUrl);
                 const login = await selinum.login(driver, until, By);
                 //login success
                 if(login)

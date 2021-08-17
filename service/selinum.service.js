@@ -11,7 +11,7 @@ function init() {
       '--no-sandbox',
       '--window-size=1920,1080',
       'maxSession=1',
-      // 'headless'
+      'headless'
       )
       let driver = await new Builder()
       .forBrowser('chrome')
