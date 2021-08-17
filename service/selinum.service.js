@@ -1,6 +1,6 @@
 const {Builder, By, Key, until} = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
-
+require('chromedriver');
 function init() {
   return new Promise(async (resolve, reject)=>{
     try
@@ -11,7 +11,7 @@ function init() {
       '--no-sandbox',
       '--window-size=1920,1080',
       'maxSession=1',
-      'headless'
+      // 'headless'
       )
       let driver = await new Builder()
       .forBrowser('chrome')

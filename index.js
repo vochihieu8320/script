@@ -35,7 +35,7 @@ const acc = async()=>{
 
 const scriptStart = async()=>{
     let isRunning = false;
-    cron.schedule('* * * * *', async() => 
+    cron.schedule('* * * * * *', async() => 
     {   
         if(isRunning === false)
         {      
@@ -51,7 +51,7 @@ const scriptStart = async()=>{
                     {            
                         if(result.length > 0)
                         {
-                          
+                            
                             isRunning = true
                             const data = await service.checkPermisson(result, db);  
                             isRunning = false;
