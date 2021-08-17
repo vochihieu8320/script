@@ -1,5 +1,5 @@
 module.exports= {
-    name: "check permisson",
+    name: "ccm_check_permisson",
     script: 'index.js',
     instances: 1,
     autorestart: true,
