@@ -35,7 +35,7 @@ const acc = async()=>{
 
 const scriptStart = async()=>{
     let isRunning = false;
-    cron.schedule('* * * * * *', async() => 
+    cron.schedule('* * * * *', async() => 
     {   
         if(isRunning === false)
         {      
