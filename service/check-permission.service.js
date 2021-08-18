@@ -52,7 +52,6 @@ function checkPermisson(campaign, db) {
                 else {
                     resolve(false);
                 }
-
             }
             catch (error) {
                 resolve(false);

@@ -1,32 +1,25 @@
-const {Builder, By, Key, until} = require('selenium-webdriver');
+const path = require('path');
+const webDriver = require('selenium-webdriver');
 const chrome = require('selenium-webdriver/chrome');
-require('chromedriver');
+const chromePath = require('chromedriver').path;
+const service = new chrome.ServiceBuilder(chromePath).build();
+chrome.setDefaultService(service);
 
 function init() {
-  return new Promise(async (resolve, reject)=>{
-    try
-    {
-      let chrome_options = new chrome.Options().
-      addArguments(
-      '--disable-dev-shm-usage',
-      '--no-sandbox',
-      '--window-size=1920,1080',
-      'maxSession=1',
-      // 'headless'
-      )
-      let driver = await new Builder()
-      .forBrowser('chrome')
-      .setChromeOptions(chrome_options)
-      .build();
-      resolve(driver);     
-    } 
-    catch (error) 
-    {
-      reject(error)
+  return new Promise(async (resolve) => {
+    try {
+      const browser = await new webDriver.Builder()
+        .withCapabilities(webDriver.Capabilities.chrome())
+        .setChromeOptions(new chrome.Options().headless().setUserPreferences({
+          "download.default_directory": path.resolve(__dirname, "/download"),
+        }).addArguments("--no-sandbox", "--disable-dev-shm-usage","--window-size=1920,1080"))
+        .build();
+      resolve(browser);
+    } catch (error) {
+      console.log(error);
+      resolve(false);
     }
-   
   })
-  
 }
 
 
