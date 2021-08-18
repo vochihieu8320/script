@@ -1,5 +1,4 @@
 const { Builder, By, Key, until } = require('selenium-webdriver');
-const chrome = require('selenium-webdriver/chrome');
 const selinum = require('./selinum.service')
 const campaign_service = require('./campaign.service');
 
@@ -9,12 +8,12 @@ function checkPermisson(campaign, db) {
         async (resolve, reject) => {
             try {
                 console.log("run check permission campaign")
-                const driver = await selinum.init();
+                let driver = await selinum.init();
                 global.chrome_driver = driver;
                 await driver.get(process.env.homePageUrl);
-                const login = await selinum.login(driver, until, By);
+                driver = await selinum.login(driver, until, By);
                 //login success
-                if (login) {
+                if (driver) {
                     for (let i = 0; i < campaign.length; i++) {
                         if (campaign[i].ca_permisson === 10) {
                             let permission_granted = false;
@@ -49,9 +48,7 @@ function checkPermisson(campaign, db) {
                     resolve(true);
                 }
                 //login fail
-                else {
-                    resolve(false);
-                }
+                resolve(false);
             }
             catch (error) {
                 resolve(false);
