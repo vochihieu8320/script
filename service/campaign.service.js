@@ -11,7 +11,6 @@ function Update_Campaign(data, db)
             }
             else
             {
-              
                 resolve(true);
             }
           }) 
@@ -21,7 +20,7 @@ function Update_Campaign(data, db)
 
 function Get_Campaign(db) {
     return new Promise(async (resolve, reject)=>{
-        const query ="SELECT * FROM `campaign`";
+        const query ="SELECT * FROM `campaign` WHERE `ca_permisson` = 10 ORDER BY ca_updated_at LIMIT 2";
         db.query(query,(err, result, fields) =>{
             if(err)
             {
@@ -31,8 +30,6 @@ function Get_Campaign(db) {
             {   
                 resolve(result)
             }
-
-
         })
     })
 }
