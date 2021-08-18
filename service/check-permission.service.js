@@ -45,7 +45,10 @@ function checkPermisson(campaign, db) {
                         };
                     }
                     await driver.quit();
-                    resolve(true);
+                    setTimeout(()=>{
+                        resolve(true);
+                    }, 1000)
+                   
                 }
                 //login fail
                 resolve(false);

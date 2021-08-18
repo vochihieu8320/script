@@ -11,7 +11,7 @@ module.exports= {
         "database_port": 3306,
         "database_user": "root",
         "password": "",
-        "database": "hiq_ccm_test",
+        "database": "hiq_ccm_prod",
         "indiegogo_username" : "support@hiq.ai",
         "indiegogo_password" : "HiQ2017@11#17",
         "homePageUrl": "https://www.indiegogo.com"
