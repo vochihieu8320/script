@@ -3,7 +3,7 @@ module.exports= {
     script: 'index.js',
     instances: 1,
     autorestart: true,
-    exec_mode: "fork",
+    exec_mode: "cluster_mode",
     watch: false,
     max_memory_restart: '512M',
     env:{

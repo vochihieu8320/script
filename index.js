@@ -42,6 +42,7 @@ const scriptStart = async () => {
                 const campaigns = await campaign_service.Get_Campaign(db);
                 if (campaigns.length > 0) {
                     const data = await service.checkPermisson(campaigns, db);
+                    
                 };
             }
             catch (error) {

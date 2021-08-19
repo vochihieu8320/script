@@ -13,7 +13,7 @@ function init() {
         .withCapabilities(webDriver.Capabilities.chrome())
         .setChromeOptions(new chrome.Options().
             setUserPreferences({"download.default_directory": path.resolve(__dirname, "/download"),
-        }).addArguments("--no-sandbox", "--disable-dev-shm-usage", "--window-size=1920,1080", "headless"))
+        }).addArguments("--no-sandbox", "--disable-dev-shm-usage", "--window-size=1920,1080"))
         .build();
       resolve(browser);
     } catch (error) {
@@ -31,11 +31,11 @@ function acceptCookie(driver, By) {
   return new Promise(async(resolve, reject) => {
    
       try { 
-        const accept_cookie = await driver.findElement(By.id('CybotCookiebotDialogBodyButtonAccept'));
-        if (accept_cookie) {
-          await accept_cookie.click();
-          resolve(true)
-        }
+          const accept_cookie = await driver.findElement(By.id('CybotCookiebotDialogBodyButtonAccept'));
+          if (accept_cookie) {
+            await accept_cookie.click();
+            resolve(true)
+          } 
       }
       catch (error) {
         resolve(true)
@@ -78,7 +78,7 @@ function login(driver, until, By) {
       const cookies = await driver.manage().getCookies();
       //check login success or not
       if (cookies) {
-        resolve(driver);
+        resolve(true);
       }
       else {
         resolve(false);
@@ -124,7 +124,12 @@ function detailCampaign(campaign_title, driver, until, By) {
   return new Promise(async (resolve, reject) => {
     const option = `//a[text()="${campaign_title}"]`;
     try {
-      await acceptCookie(driver,By)
+      try {
+        await acceptCookie(driver,By)    
+      } catch (error) {
+        
+      }
+    
       const click_option = await driver.wait(until.elementLocated(By.xpath(option)));
       if (click_option) {
         click_option.click();
@@ -145,7 +150,12 @@ function detailCampaign(campaign_title, driver, until, By) {
 function editCampaign(driver, until, By) {
   return new Promise(async (resolve, reject) => {
     try {
-      await acceptCookie(driver,By)
+      try {
+        await acceptCookie(driver,By)    
+      } catch (error) {
+        
+      }
+    
       const edit = "//span[text()='Campaign Editor']";
       let click_edit;
       try {
@@ -158,30 +168,40 @@ function editCampaign(driver, until, By) {
 
       if (click_edit)
        {
-        await acceptCookie(driver, By)
+         try {
+          await acceptCookie(driver, By)     
+         } catch (error) {
+           
+         }
+      
         await click_edit.click();
         const perk = "//span[text()='3. ']"
         //click perk
         setTimeout(async()=>{
           const click_perk = await driver.wait(until.elementLocated(By.xpath(perk)));
+
           await click_perk.click();
-        }, 2000)
+        }, 1000)
        
 
         //check can click perk
         let check_perk;
-        try {
-          check_perk = await driver.findElement(By.xpath("//h1[text()='Where did it go?']"));
-        }
-        catch (error) {
-          resolve(true);
-        }
-        if (check_perk) {
-          resolve(false);
-        }
-        else {
-          resolve(true);
-        }
+        setTimeout(async()=>{
+          try
+          {
+            check_perk = await driver.findElement(By.xpath("//h1[text()='Where did it go?']"));
+          }
+          catch (error) {
+            resolve(true);
+          }
+          if (check_perk) {
+            resolve(false);
+          }
+          else {
+            resolve(true);
+          }
+        }, 2000)
+       
 
       }
       else {

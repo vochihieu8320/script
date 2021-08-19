@@ -8,12 +8,11 @@ function checkPermisson(campaign, db) {
         async (resolve, reject) => {
             try {
                 console.log("run check permission campaign")
-                let driver = await selinum.init();
-                global.chrome_driver = driver;
+                let driver = await selinum.init();              
                 await driver.get(process.env.homePageUrl);
-                driver = await selinum.login(driver, until, By);
+                const check_login = await selinum.login(driver, until, By);        
                 //login success
-                if (driver) {
+                if (check_login) {
                     for (let i = 0; i < campaign.length; i++) {
                         if (campaign[i].ca_permisson === 10) {
                             let permission_granted = false;
@@ -44,11 +43,10 @@ function checkPermisson(campaign, db) {
                             }
                         };
                     }
-                    await driver.quit();
-                    setTimeout(()=>{
-                        resolve(true);
-                    }, 1000)
-                   
+                 
+                
+                   await driver.quit();  
+                   resolve(true);
                 }
                 //login fail
                 resolve(false);
