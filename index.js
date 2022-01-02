@@ -1,62 +1,96 @@
-const mysql = require('mysql');
-const service = require('./service/check-permission.service');
-const selinum_servicve = require('./service/selinum.service');
-const campaign_service = require('./service/campaign.service');
-const cron = require('node-cron');
-const db = mysql.createConnection({
-    host: process.env.database_host,
-    port: process.env.database_port,
-    user: process.env.database_user,
-    password: process.env.password,
-    database: process.env.database,
+const { createServer } = require("http");
+const { Server, Socket } = require("socket.io");
+const express = require("express");
+const cron = require("node-cron");
+const cors = require("cors");
+const db = require("./db/db");
+const app = express();
+const auctions_history = require("./service/auction_history.service");
+const BideService = require("./service/bide.service");
+const AuctionService = require("./service/auction.service");
+
+app.use(
+  cors({
+    origin: process.env.Domain_Fe,
+  })
+);
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+const port = process.env.PORT || 5000;
+const httpServer = createServer(app);
+//create socker server
+const io = new Server(httpServer, {
+  cors: {
+    origin: process.env.Domain_Fe,
+  },
 });
 
-const connect_database = async () => {
-    return new Promise(async (resolve, reject) => {
-        db.connect((err) => {
-            if (err) {
-                console.log("err", err);
-                reject(err);
-            }
-            resolve(true);
-        });
+io.on("connection", async (socket) => {
+  socket.on("join-room", async (productID, callback) => {
+    try {
+      socket.join(productID);
+      const auctions = await auctions_history.auction_history(productID);
+      callback({ status: "success" });
+      io.to(productID).emit("room-messages", auctions);
+    } catch (error) {
+      console.log(error);
+      callback("something went wrong");
+    }
+  });
 
-    })
-
-}
-
-const acc = async () => {
-    const data = await selinum_servicve.GetIndiegogo_acc(db);
-    process.env.indiegogo_username = data.iggAcount1.email;
-    process.env.indiegogo_password = data.iggAcount1.password;
-    process.env.homePageUrl = data.homePageUrl
-
-}
-
-const scriptStart = async () => {
-    let isRunning = false;
-    cron.schedule('* * * * *', async () => {
-        if (isRunning === false) {
-            try {
-                isRunning = true;
-                const campaigns = await campaign_service.Get_Campaign(db);
-                if (campaigns.length > 0) {
-                    const data = await service.checkPermisson(campaigns, db);
-                    
-                };
-            }
-            catch (error) {
-                console.log("error", error);
-            };
-            isRunning = false;
+cron.schedule("*/10 * * * * *", async () => {
+    //tìm các auctions còn đấu giá
+    let auction = await AuctionService.getAuctions();
+    if(!auction.productID)
+      return; 
+    socket.join(auction.productID);
+    //tim tất cả bider của cuộc đấu giá đó
+    const biders = await BideService.Biders(auction.productID);
+    let count = 0 ;
+    for (let j = 0; j < biders.length; j++) {
+      // nếu bider hiện tại không phải là người đang giữ giá cao nhất
+      if (biders[j].userID != auction.holderID) {
+        //kiểm trả xem bider này có thể đấu giá được hay không
+        if (
+          await BideService.check_bide(
+            biders[j].userID,
+            biders[j].productID,
+            auction.real_price,
+            auction.min_price
+          )
+        ) {
+          //có thể đấu giá
+          let message = await BideService.bide(
+            biders[j].userID,
+            biders[j].productID,
+            auction.real_price,
+            auction.min_price
+          );
+          //câp nhật lại người giữ giá hiện tại
+          auction.holderID = biders[j].userID;
+          // cập nhật lại giá vào sản phẩm
+          auction.min_price = parseInt(auction.min_price) + parseInt(auction.real_price)*0.01;
+          io.to(auction.productID).emit("received-messages", message, auction.holderID);  
+               
+        } 
+        else 
+        {
+          count++;
         }
-    });
-}
+      }
+    }
+    // đấu giá hoàn tất
+    if(count == biders.length - 1){
+      await AuctionService.updateAuction(auction.productID, {status:0})
+    }
+    
+});
+
+});
 
 
-connect_database();
-acc()
-scriptStart();
-
-
-
+db.connect();
+httpServer.listen(port, () => {
+  console.log(`Server listen at ${port}`);
+});
