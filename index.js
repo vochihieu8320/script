@@ -8,7 +8,7 @@ const app = express();
 const auctions_history = require("./service/auction_history.service");
 const BideService = require("./service/bide.service");
 const AuctionService = require("./service/auction.service");
-
+const User = require("./model/users.model");
 app.use(
   cors({
     origin: process.env.Domain_Fe,
@@ -37,42 +37,51 @@ io.on("connection", async (socket) => {
       console.log(error);
       callback("something went wrong");
     }
+
   });
 
+  socket.on("bide", async (message) => {
+    socket.join(message.productID);
+    const user = await User.findById(message.userID);
+    io.to(message.productID).emit("received-messages", message, user);       
+  })
+
 cron.schedule("*/10 * * * * *", async () => {
-    //tìm các auctions còn đấu giá
-    let auction = await AuctionService.getAuctions();
-    if(!auction.productID)
-      return; 
+//     //tìm các auctions còn đấu giá
+    const result = await AuctionService.getAuctions();
+    let auction = result[0]
     socket.join(auction.productID);
     //tim tất cả bider của cuộc đấu giá đó
     const biders = await BideService.Biders(auction.productID);
-    let count = 0 ;
+    let count = 0 ; 
     for (let j = 0; j < biders.length; j++) {
       // nếu bider hiện tại không phải là người đang giữ giá cao nhất
-      if (biders[j].userID != auction.holderID) {
+      if (biders[j].userID !== auction.holderID) {
         //kiểm trả xem bider này có thể đấu giá được hay không
         if (
           await BideService.check_bide(
             biders[j].userID,
             biders[j].productID,
-            auction.real_price,
-            auction.min_price
+            auction
           )
-        ) {
+        ) { 
           //có thể đấu giá
           let message = await BideService.bide(
             biders[j].userID,
             biders[j].productID,
-            auction.real_price,
-            auction.min_price
+            biders[j].bid_step,
+            auction
           );
-          //câp nhật lại người giữ giá hiện tại
-          auction.holderID = biders[j].userID;
-          // cập nhật lại giá vào sản phẩm
-          auction.min_price = parseInt(auction.min_price) + parseInt(auction.real_price)*0.01;
-          io.to(auction.productID).emit("received-messages", message, auction.holderID);  
-               
+          if(message !== null)
+          {
+             //câp nhật lại người giữ giá hiện tại
+            auction.holderID = biders[j].userID;
+            // cập nhật lại giá vào sản phẩm
+            // const price = await AuctionService.getPrice(auction);
+            auction.min_price = parseInt(auction.min_price) + biders[j].bid_step;
+            const user = await User.findById(message.userID);
+            io.to(auction.productID).emit("received-messages", message, user);             
+          }
         } 
         else 
         {

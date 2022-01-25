@@ -3,7 +3,7 @@ const Auction = require('../model/auction.model');
 class AuctionService{
     async getAuctions(){
         try {
-            const auctions = await Auction.findOne({status: 1});
+            const auctions = await Auction.find({status: 1}).limit(1);
             return auctions
         } catch (error) {
             console.log(error)
@@ -24,6 +24,9 @@ class AuctionService{
         } catch (error) {
             console.log(error)
         }
+    }
+    async getPrice(auction){
+        return (auction.bide) ? parseInt(auction.bide) : (parseInt(auction.real_price)*0.01)
     }
 
 }
