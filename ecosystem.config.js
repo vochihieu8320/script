@@ -14,6 +14,7 @@ module.exports= {
         Domain_Fe: "http://localhost:4200",
         email_password: "ywdkvqdaxlgiqnlq",
         email_name: "chihieu8320@gmail.com",
+        Domain_Fe: "http://localhost:4200",
     },
     env_production:{
         PORT: 5000,
@@ -24,6 +25,7 @@ module.exports= {
         db_username: "appchat",
         email_password: "ywdkvqdaxlgiqnlq",
         email_name: "chihieu8320@gmail.com",
+        Domain_Fe: "http://localhost:4200",
     },
     error_file: 'err.log',
     out_file: 'out.log',

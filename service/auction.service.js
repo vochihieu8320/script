@@ -3,7 +3,7 @@ const Auction = require('../model/auction.model');
 class AuctionService{
     async getAuctions(){
         try {
-            const auctions = await Auction.find({status: 1}).limit(1);
+            const auctions = await Auction.find({status: 1}).limit(3);
             return auctions
         } catch (error) {
             console.log(error)

@@ -9,6 +9,10 @@ const auctions_history = require("./service/auction_history.service");
 const BideService = require("./service/bide.service");
 const AuctionService = require("./service/auction.service");
 const User = require("./model/users.model");
+const Product = require("./model/product.model");
+const mailService = require("./service/mail.service");
+const mail_template = require("./email_template/cant_bide")
+const mail = require("./mailer/mailer")
 app.use(
   cors({
     origin: process.env.Domain_Fe,
@@ -46,10 +50,11 @@ io.on("connection", async (socket) => {
     io.to(message.productID).emit("received-messages", message, user);       
   })
 
-cron.schedule("*/10 * * * * *", async () => {
+cron.schedule("* * * * * *", async () => {
 //     //tìm các auctions còn đấu giá
     const result = await AuctionService.getAuctions();
-    let auction = result[0]
+    for(let k=0; k < result.length; temp_auction++) {
+      let auction = result[k]
     socket.join(auction.productID);
     //tim tất cả bider của cuộc đấu giá đó
     const biders = await BideService.Biders(auction.productID);
@@ -58,12 +63,7 @@ cron.schedule("*/10 * * * * *", async () => {
       // nếu bider hiện tại không phải là người đang giữ giá cao nhất
       if (biders[j].userID !== auction.holderID) {
         //kiểm trả xem bider này có thể đấu giá được hay không
-        if (
-          await BideService.check_bide(
-            biders[j].userID,
-            biders[j].productID,
-            auction
-          )
+        if (await BideService.check_bide(biders[j].userID, biders[j].productID, auction)
         ) { 
           //có thể đấu giá
           let message = await BideService.bide(
@@ -85,6 +85,21 @@ cron.schedule("*/10 * * * * *", async () => {
         } 
         else 
         {
+          const userinfo = await User.findById(biders[j].userID);
+          const productinfo = await Product.findById(biders[j].productID);
+          const link = `${process.env.Domain_Fe}/products/${productinfo._id}`
+          const form = {
+            name: userinfo.name,
+            product_name: productinfo.name,
+            link: link,
+          }
+          const reject = mail_template.cant_bide(form)
+          //create option (sent to who ??)
+          const mail_options = mailService.mail_options(userinfo.email, reject, "Cant bide");
+          //conect mail server
+          const transporter = mail.connect()
+          //send mail
+          mailService.send_mail(transporter, mail_options);
           count++;
         }
       }
@@ -93,6 +108,8 @@ cron.schedule("*/10 * * * * *", async () => {
     if(count == biders.length - 1){
       await AuctionService.updateAuction(auction.productID, {status:0})
     }
+    }
+    
     
 });
 
