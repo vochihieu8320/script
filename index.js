@@ -21,7 +21,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 const httpServer = createServer(app);
 //create socker server
 const io = new Server(httpServer, {

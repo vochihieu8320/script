@@ -7,7 +7,6 @@ module.exports= {
     watch: false,
     max_memory_restart: '512M',
     env:{
-        PORT: 5000,
         NODE_ENV: "development",
         db : "mongodb://localhost:27017/AppChat",
         JWT_TOKEN_SECRET: "vch@11111111iiiiiiiii",
@@ -17,7 +16,6 @@ module.exports= {
         Domain_Fe: "http://localhost:4200",
     },
     env_production:{
-        PORT: 5000,
         NODE_ENV: "production",
         JWT_TOKEN_SECRET: "vch@11111111iiiiiiiii",
         db : "mongodb+srv://appchat:zK26s3auQa52Ux1I@cluster0.aw7bq.mongodb.net/AppChat?retryWrites=true&w=majority",
